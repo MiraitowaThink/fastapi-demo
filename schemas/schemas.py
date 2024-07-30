@@ -22,7 +22,9 @@ from typing import List, Optional
 class UserBase(BaseModel):
     merchant_admin_id: int
     mer_id: int
+    account: str
     real_name: str
+    # last_ip: str
 
 #
 # class UserCreate(UserBase):

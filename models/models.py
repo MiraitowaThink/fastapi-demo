@@ -8,7 +8,9 @@ class merchantAdmin(Base):
 
     merchant_admin_id = Column(Integer, primary_key=True, index=True)
     mer_id = Column(Integer, unique=True, index=True)
+    account = Column(String(50))
     real_name = Column(String(50))
+    last_ip = Column(String(50))
 
 # class merchant(Base):
 #     __tablename__ = "eb_merchant"
